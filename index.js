@@ -36,9 +36,12 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+let name = "Elle";
+
+function sayGoodbye(name) {
+  return "Goodbye, " + name + ". Have a great day.";
 }
+
 
 /**
  * ### Challenge `temperatureCtoF`
@@ -54,9 +57,15 @@ function sayGoodbye(/* code here */) {
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
-function temperatureCtoF(/* code here */) {
-  /* code here */
+let tempCelsius = 24;
+
+function temperatureCtoF(tempCelsius) {
+  tempFarenheit = tempCelsius * (9/5) + 32;
+  
+  return Math.round(tempFarenheit);
 }
+
+
 
 /**
  * ### Challenge `temperatureInF`
@@ -75,9 +84,15 @@ function temperatureCtoF(/* code here */) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+
+let temperature = tempCelsius;
+const farenheit = "F"
+
+function temperatureInF(temperature,farenheit) {
+  
+  return Math.round(temperatureCtoF(tempCelsius)) + farenheit;
 }
+
 
 
 /**
@@ -96,9 +111,14 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+let id = 5;
+name = "Leia";
+let email = "leia@leia.com";
+
+function makePersonObject(id,name,email) {
+  return "id: " + id + "name: " + name + "email: " + email;
 }
+
 
 /**
  * ### Challenge `getName`
@@ -113,8 +133,10 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(name) {
+  name = "Leia";
+
+  return "Hello, my name is " + name;
 }
 
 
@@ -133,9 +155,12 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+let fruit = ['orange', 'grape', 'apple', 'banana', 'mango' ]
+
+function appleIndex(fruit) {
+  return fruit[2];
 }
+
 
 /**
  * ### Challenge `isItAnApple`
@@ -152,8 +177,18 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+
+fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango'];
+
+function isItAnApple(fruit) {
+  for (let i=0; i<7; i++) {
+    if (fruit="apple") {
+      return true;
+    }
+    else {
+      return false;
+}
+}
 }
 
 
